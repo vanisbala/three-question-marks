@@ -1,0 +1,37 @@
+body{
+    background-color: lightslategrey;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color :midnightblue;
+   
+}
+#direction{
+    text-align: center;
+    
+}
+
+#inputdiv{
+    margin:auto;
+    width: 50%;
+    padding : 40px;
+    border: 3px solid royalblue;
+    background-color: slategray;
+    font-size: medium;
+    top:40%;
+    left:auto;
+}
+
+#checkBtn{
+    color :midnightblue;
+    background-color: steelblue;
+    padding: 5px 10px;
+}
+
+#userStr{
+    padding: 7px 15px;
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+
+
+
