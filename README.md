@@ -1,6 +1,6 @@
 # three-question-marks
 It checks whether the given string contain three consequtive question marks that 
-appears in between a pair of two numbers with their sum value 10.
+appears in between a pair of two numbers with their sum value of 10.
 
 ## Description
 - checks whether there is a number pair with the sum value 10.
