@@ -9,25 +9,26 @@
       //console.log("Entered String:"+ checkstr);
 
       function check(){
-      checkstr = document.getElementById('userStr').value;
-      console.log(checkstr);
-      numArr=checkNumbers(checkstr); // Array of Number,position pair
-      numArr.forEach(checkAddTen);
-      if (flagForThreeQs){
-        
-        document.getElementById('getResult').innerHTML = "Given string contains '???' in between the number pair which has the sum value 10";
-        document.getElementById('getResult').style.color = "limegreen";
+        checkstr = document.getElementById('userStr').value;
+        console.log(checkstr);
+        numArr=checkNumbers(checkstr); // Array of Number,position pair
+        numArr.forEach(checkAddTen);
+          if (flagForThreeQs){
+          
+            outputStyle("","limegreen");
+          }
+          else{
+            outputStyle("does not","firebrick");  
+          }
+
+      }
+
+      function outputStyle(yesOrNo, color) {
+        document.getElementById('getResult').innerHTML = `Given string ${yesOrNo} contains '???' in between the number pair which has the sum value 10`;
+        document.getElementById('getResult').style.color = color;
         document.getElementById('getResult').style.fontSize = "large";
         document.getElementById('getResult').style.fontWeight="bold";
-        }
-        else{
-            document.getElementById('getResult').innerHTML = "Given string does not contains '???' in between the number pair which has the sum value 10";
-            document.getElementById('getResult').style.color = "firebrick";  
-            document.getElementById('getResult').style.fontSize = "large";
-            document.getElementById('getResult').style.fontWeight="bold";
-        }
-
-    }
+      }
 
       // This function checks weather any of the number pair makes 10. if so it then calls checkQuestionMark function.
       function checkAddTen(item,index,numArr){
