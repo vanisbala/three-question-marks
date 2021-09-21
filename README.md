@@ -3,7 +3,7 @@ It checks whether the given string contain three consequtive question marks that
 appears in between a pair of two numbers with their sum value of 10.
 
 ## Description
-- checks whether there is a number pair with the sum value of 10.
+- checks whether there is a number pair with sum value 10 in the string.
 - checks whether three consequtive question marks are there in between those pairs.
 - It displays a message whether the string staisfies these conditions or not.
 - Ex : eeer2gh?gh8  - The string did not contain the specific pattern <br />
